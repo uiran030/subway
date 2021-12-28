@@ -1,0 +1,154 @@
+/* @charset "utf-8";
+
+*{margin:0; padding:0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color:inherit;}
+.row{max-width: 1170px; margin:0 auto;} */
+/* 공통클래스를 만들어서 적용필요할때마다 쓰는것 */
+/* .cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+img{max-width: 100%; vertical-align: middle;}
+fieldset{border:none;}
+legend{display: none;} */
+
+/* 헤더작업 */
+/* #header{border-top:3px solid #009223;}
+.htop{position:relative;} */
+/* 
+    position:absolute는 상위요소를 기준으로 위치를 잡음.
+    기준이 되는 상위요소에 반드시 position:relative를 줘야함.
+*/
+/* h1 {
+    padding-top:30px;
+    text-align: center;
+} */
+
+/* 상단 우측 작업 */
+/* .membership{
+    position:absolute;
+    top:40px;
+    right:0;
+} */
+/* 하위 요소가 absolute를 잡으면 상위 요소에게 relative를 무조건! */
+/* .membership > a:first-child::after {
+    content: 'ㆍ';
+    /* font-size: 20px; */
+    /* position: relative;
+    left:10px; 
+}*/
+/* .membership a {
+    vertical-align: middle;
+    font-size: 13px;
+    color:#666;
+    letter-spacing: -1px;
+    padding-left: 15px;
+} */
+/* .membership a:last-child{
+    font-size: 20px;
+    color:black;
+} */
+
+/* 네비게이션 작업 */
+/* #nav{position:relative;}
+#nav .row{position:relative;}
+#nav .search{
+    position:absolute;
+    top:40px; right:0;
+}
+#nav .search input{
+    height: 30px; 
+    border:none; 
+    border-bottom: 1px solid green;
+    padding-left: 1em;
+}
+#nav .search button{
+    background: none; 
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.depth1{padding:0; width:950px;}
+.depth1 > li {
+    float: left;
+    width:16.666%;
+    position:relative;
+}
+.depth1 > li > a {
+    display: block;
+    padding:40px 0;
+    font-size: 18px;
+    color:#262626;
+    font-weight: bold;
+    text-align: center;
+} */
+/* 
+글자스타일 li,a 상관없이 줘도되지만 a 직접주는 것이 좋음
+ */
+/* .depth1 > li:hover > a {color:#009223}
+.depth2{
+    position:absolute;
+    top:100%; left:0;
+    width:100%;
+    padding:25px 0;
+    text-align: center;
+    display: none;
+    height: 272px;
+    z-index: 999;
+}
+.depth1:hover > li .depth2 {display: block;}
+
+.depth2 > li > a {
+    font-size: 15px;
+    display:block;
+    color: #666;
+    line-height: 2em;
+    font-weight: bold; */
+    /* padding:10px 0;  (padding or line-height로 진행) */
+    /* letter-spacing: -1px;
+}
+.depth2 > li:hover > a{
+    color:#009223; 
+    text-decoration: underline;
+}
+
+#nav .decobox{
+    position:absolute;
+    top:100%; left: 0;
+    width:100%;
+    background: #fff;
+    height: 272px;
+    border-top: 1px solid #ddd;
+    display: none;
+    z-index:99
+}
+#nav .row:hover + .decobox{display: block;} */
+
+/* 슬라이드 구역 */
+.sliderouter{max-width: 100%;  /*height: 441px; overflow: hidden;*/}
+.sliderouter .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 441px;
+    position:relative;
+}
+.sliderouter .slide1 {background-image: url(..//imgs/slide1.png);}
+.sliderouter .slide2 {background-image: url(..//imgs/slide2.jpg);}
+.sliderouter .slide3 {background-image: url(..//imgs/slide3.png);}
+.sliderouter .slide4 {background-image: url(..//imgs/slide4.jpg);}
+.sliderouter .text{ 
+    position:absolute;
+    left:300px; top:50%;
+    transform: translateY(-50%);
+}
+.sliderouter .text p:nth-child(1){font-size: 30px;}
+.sliderouter .text p:nth-child(2){
+    font-size: 20px;
+    margin:20px 0;
+}
+.sliderouter .text p:nth-child(3){font-size: 16px;}
+.sliderouter .text p:nth-child(4){font-size: 30px;}

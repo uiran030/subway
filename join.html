@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY 써브웨이</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/join.css">
+</head>
+<body>
+    <div id="header">
+        <div class="htop row">
+            <h1>
+                <a href="./index.html"><img src="./imgs/logo_w.png" alt="써브웨이"></a>
+            </h1>
+            <div id="timebox"></div>
+            <div class="membership">
+                <a href="./login.html">로그인</a>
+                <a href="./join.html">회원가입</a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+
+        <div id="nav">
+            <div class="row">
+                <ul class="depth1 cf">
+                    <li><a href="#">메뉴소개</a>
+                        <ul CLASS="depth2">
+                            <li><a href="#">샌드위치</a></li>
+                            <li><a href="#">랩ㆍ기타</a></li>
+                            <li><a href="#">샐러드</a></li>
+                            <li><a href="#">아침메뉴</a></li>
+                            <li><a href="#">스마일 썹</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이용방법</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 이용방법</a></li>
+                            <li><a href="#">단체메뉴 이용방법</a></li>
+                            <li><a href="#">신선한 재료 소개</a></li>
+                            <li><a href="#">App 이용방법</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">새소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">이벤트ㆍ프로모션</a></li>
+                            <li><a href="#">뉴스ㆍ공지사항</a></li>
+                            <li><a href="#">광고영상</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">써브웨이</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 역사</a></li>
+                            <li><a href="#">써브웨이 약속</a></li>
+                            <li><a href="#">샌드위치 아티스트 지원</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">가맹점</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 프랜차이즈</a></li>
+                            <li><a href="#">가맹관련 FAQ</a></li>
+                            <li><a href="#">가맹신청ㆍ문의</a></li>
+                            <li><a href="#">지사안내</a></li>
+                            <li><a href="#">사업설명회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">온라인 주문</a>
+                        <ul class="depth2">
+                            <li><a href="#">FAST-SUB</a></li>
+                            <li><a href="#">HOME-SUB</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search">
+                    <form action="#" method="post" name="searchForm">
+                        <fieldset>
+                            <legend>검색창박스</legend>
+                            <input type="text" name="keyword" 
+                            id="keyword" placeholder="New 5%">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="decobox"></div>
+        </div>
+    </div>
+    <div class="container row">
+        <h2>Join</h2>
+        <form action="#" method="post" name="joinForm" id="joinForm">
+            <fieldset>
+                <legend>가입정보입력</legend>
+                <ul>
+                    <li>
+                        <label for="id" class="tit">아이디</label>
+                        <input type="text" id="id" name="id">
+                    </li>
+                    <li>
+                        <label for="password" class="tit">비밀번호</label>
+                        <input type="password" id="password" name="password">
+                    </li>
+                    <li>
+                        <label for="password" class="tit">비밀번호 확인</label>
+                        <input type="password" id="passwordok">
+                        <p class="passhint">영문 대소문자/숫자/특수문자를 혼용하여 2종류 10~16자 또는 3종류 8~16자 입력</p>
+                    </li>
+                    <li>
+                        <label for="irum" class="tit">이름</label>
+                        <input type="text" id="irum" name="irum">
+                    </li>
+                    <li>
+                        <label for="hp" class="tit">휴대번호</label>
+                        <input type="text" id="hp" name="hp" placeholder="번호는 -없이 숫자만 입력하세요.">
+                    </li>
+                    <li>
+                        <label for="birthyear" class="tit">생년월일</label>
+                        <select name="birthyear" id="birthyear">
+                            <!-- <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option> -->
+                        </select>
+                        년
+                        <select name="birthmonth" id="birthmonth">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option> -->
+                        </select>
+                        월
+                        <select name="birthday" id="birthday">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option> -->
+                        </select>
+                        일
+                    </li>
+                    <li>
+                        <label class="tit">성별</label>
+                        <input type="radio" id="male" name="gender" checked>
+                        <label for="male">남</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">여</label>
+                    </li>
+                    <li>
+                        <label for="#" class="tit">이메일</label>
+                        <input type="text" id="emailid" name="emailid">
+                        @
+                        <input type="text" id="emaildomain" name="emaildomain" disabled>
+                        <select id="domainlist">
+                            <option value="self">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="" class="tit">첨부파일</label>
+                        <input type="file" id="attach" name="attach"> 
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="btn">
+                <button type="submit">가입하기</button>
+                <button type="rest">취소</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/join.js"></script>
+</body>
+</html>

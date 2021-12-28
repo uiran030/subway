@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBWAY 써브웨이</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="htop row">
+            <h1>
+                <a href="./index.html"><img src="./imgs/logo_w.png" alt="써브웨이"></a>
+            </h1>
+            <div id="timebox"></div>
+            <div class="membership">
+                <a href="./login.html">로그인</a>
+                <a href="./join.html">회원가입</a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+
+        <div id="nav">
+            <div class="row">
+                <ul class="depth1 cf">
+                    <li><a href="#">메뉴소개</a>
+                        <ul CLASS="depth2">
+                            <li><a href="#">샌드위치</a></li>
+                            <li><a href="#">랩ㆍ기타</a></li>
+                            <li><a href="#">샐러드</a></li>
+                            <li><a href="#">아침메뉴</a></li>
+                            <li><a href="#">스마일 썹</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이용방법</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 이용방법</a></li>
+                            <li><a href="#">단체메뉴 이용방법</a></li>
+                            <li><a href="#">신선한 재료 소개</a></li>
+                            <li><a href="#">App 이용방법</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">새소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">이벤트ㆍ프로모션</a></li>
+                            <li><a href="#">뉴스ㆍ공지사항</a></li>
+                            <li><a href="#">광고영상</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">써브웨이</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 역사</a></li>
+                            <li><a href="#">써브웨이 약속</a></li>
+                            <li><a href="#">샌드위치 아티스트 지원</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">가맹점</a>
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 프랜차이즈</a></li>
+                            <li><a href="#">가맹관련 FAQ</a></li>
+                            <li><a href="#">가맹신청ㆍ문의</a></li>
+                            <li><a href="#">지사안내</a></li>
+                            <li><a href="#">사업설명회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">온라인 주문</a>
+                        <ul class="depth2">
+                            <li><a href="#">FAST-SUB</a></li>
+                            <li><a href="#">HOME-SUB</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search">
+                    <form action="#" method="post" name="searchForm">
+                        <fieldset>
+                            <legend>검색창박스</legend>
+                            <input type="text" name="keyword" 
+                            id="keyword" placeholder="New 5%">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="decobox"></div>
+        </div>
+    </div>
+    <!-- 
+        전체 div묶고 h1부분만 따로 또 div 묶을 필요없음 (h가 묶음역할을 함)
+        nav는 div로 묶어서 만들어내야함
+    -->
+
+    <div id="main">
+        <div class="sliderouter">
+            <div class="slideinner">
+                <div class="slide slide1">
+                </div>
+                <div class="slide slide2">
+                </div>
+                <div class="slide slide3">
+                </div>
+                <div class="slide slide4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+</body>
+</html>
